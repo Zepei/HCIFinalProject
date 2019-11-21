@@ -9,7 +9,7 @@ const tabURL = [
   '/gwalertloginportal',
 ];
 
-class index extends Component {
+class TobTab extends Component {
   render() {
     console.log(this.props);
     return (
@@ -33,5 +33,4 @@ class index extends Component {
   }
 }
 
-const TobTab = withRouter(index);
-export default TobTab;
+export default withRouter(TobTab);
