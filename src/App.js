@@ -8,9 +8,7 @@ import Main from './Main';
 function App() {
   return (
     <Router>
-      <Route >
         <Main />
-      </Route>
     </Router>
   );
 }
