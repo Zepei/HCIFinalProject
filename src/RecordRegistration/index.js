@@ -34,6 +34,10 @@ export default class RecordRegistration extends Component {
 }
 
 const WiderContainer = withStyles({
+  root: {
+    paddingTop: '32px',
+    paddingBottom: '32px',
+  },
   maxWidthLg: {
     maxWidth: '1500px',
   },
