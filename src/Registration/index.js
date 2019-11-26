@@ -49,7 +49,7 @@ export default class Registration extends Component {
     );
   }
 }
-
+// TODO: add render to columns
 const columns = [
   { id: 'status', label: 'Status', align: 'right', minWidth: 0 },
   { id: 'course', label: 'Course', align: 'right', minWidth: 70 },

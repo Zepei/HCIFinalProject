@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Container } from '@material-ui/core';
 import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import homePageImg from '../resource/gweb_is_2.gif';
 
@@ -23,10 +24,10 @@ class TobTab extends Component {
         </a>
         <Container>
           <Tabs value={tabValue} indicatorColor='primary' textColor='primary' centered>
-            <Tab label='Student Records and Registration' href='/recordsandregistration' />
-            <Tab label='Employee Information' href='/personalinfo' />
-            <Tab label='Rersonal Information Menu' href='/emploheeinfo' />
-            <Tab label='GW Alert Login Portal' href='/gwalertloginportal' />
+            <Tab label='Student Records and Registration' component={Link} to='/recordsandregistration' />
+            <Tab label='Employee Information' component={Link} to='/personalinfo' />
+            <Tab label='Rersonal Information Menu' component={Link} to='/emploheeinfo' />
+            <Tab label='GW Alert Login Portal' component={Link} to='/gwalertloginportal' />
           </Tabs>
         </Container>
       </div>

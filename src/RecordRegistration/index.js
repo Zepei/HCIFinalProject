@@ -17,7 +17,7 @@ export default class RecordRegistration extends Component {
           >
             <VerticalTabs />
           </Box>
-          <Box flexGrow='1'>
+          <Box>
             <Switch>
               <Route path={'/recordsandregistration/registration'} component={Registration} />
               <Route path={'/recordsandregistration/studentrecord'} />

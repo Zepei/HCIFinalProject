@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Container } from '@material-ui/core';
 import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const tabURL = ['/registration', '/studentrecord', '/studentaccount', '/admissions', '/veteran'];
 
@@ -16,11 +17,11 @@ class VerticalTabs extends Component {
     return (
       <div>
         <Tabs orientation='vertical' indicatorColor='primary' textColor='primary' value={tabValue}>
-          <Tab label='Registration Menu' href={'/recordsandregistration/registration'} />
-          <Tab label='Student Record Information Menu' href={'/recordsandregistration/studentrecord'} />
-          <Tab label='Student Accounts Menu' href={'/recordsandregistration/studentaccounts'} />
-          <Tab label='Admissions' href={'/recordsandregistration/admissions'} />
-          <Tab label='Veteran Menu' href={'/recordsandregistration/veteran'} />
+          <Tab label='Registration Menu' component={Link} to={'/recordsandregistration/registration'} />
+          <Tab label='Student Record Information Menu' component={Link} to={'/recordsandregistration/studentrecord'} />
+          <Tab label='Student Accounts Menu' component={Link} to={'/recordsandregistration/studentaccounts'} />
+          <Tab label='Admissions' component={Link} to={'/recordsandregistration/admissions'} />
+          <Tab label='Veteran Menu' component={Link} to={'/recordsandregistration/veteran'} />
         </Tabs>
       </div>
     );
