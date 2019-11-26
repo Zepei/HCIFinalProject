@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Record from '../Record';
-import TopTab from '../TopTab';
 import Home from '../Home';
+import TopTab from '../TopTab';
+import RecordRegistration from '../RecordRegistration';
 
 export default class Main extends Component {
   constructor(props) {
@@ -14,19 +14,13 @@ export default class Main extends Component {
     return (
       <div>
         <TopTab />
+        <div style={{ height: '50px' }} />
         <Switch>
-          <Route path='/recordsandregistration'>
-            <Record />
-          </Route>
-          <Route path='/personalinfo'>from perosn</Route>
-          <Route path='/emploheeinfo'>from emploheeinfo</Route>
-          <Route path='/gwalertloginportal'>from gw</Route>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route>
-            URL does not exist
-          </Route>
+          <Route exact path='/' component={Home} />
+          <Route path='/recordsandregistration' component={RecordRegistration} />
+          <Route path='/personalinfo' />
+          <Route path='/emploheeinfo' />
+          <Route path='/gwalertloginportal' />
         </Switch>
       </div>
     );

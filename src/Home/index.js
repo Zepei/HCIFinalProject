@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import { Container, Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
   render() {
     return (
-      <Container>
-        <Typography variant='h3'>Hello User</Typography>
-        <Typography variant='h4'>Welcome to the GWeb informatioin system</Typography>
-      </Container>
+      <div>
+        <Container style={{ paddingTop: '50px' }}>
+          <Typography variant='h3'>Hello User</Typography>
+          <Typography variant='h4'>
+            Welcome to the GWeb informatioin system
+          </Typography>
+          <br />
+          <br />
+          <Typography variant='body1'>
+            Common functions are:{' '}
+            {/* <a href='/recordsandregistration/registration'>
+              class registration
+            </a> */}
+            <Link to='/recordsandregistration/registration'>class registration</Link>
+          </Typography>
+        </Container>
+      </div>
     );
   }
 }
