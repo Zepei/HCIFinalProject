@@ -39,14 +39,16 @@ const WiderContainer = withStyles({
     paddingBottom: '32px',
   },
   maxWidthLg: {
-    maxWidth: '1500px',
+    maxWidth: '1550px',
   },
 })(Container);
 
 function mainExplanation() {
   return (
     <Box>
-      <Typography variant='h5'>Here is the explanation of this page</Typography>
+      <Container>
+        <Typography variant='h5'>Here is the explanation of this page</Typography>
+      </Container>
     </Box>
   );
 }

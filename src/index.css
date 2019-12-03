@@ -6,7 +6,6 @@ body {
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
 
 code {
@@ -15,10 +14,4 @@ code {
 
 .MuiContainer-root {
   background-color: #ffffff;
-}
-
-@media (min-width: 1280px) {
-  .MuiContainer-maxWidthLg {
-    max-width: 1480px;
-  }
 }
