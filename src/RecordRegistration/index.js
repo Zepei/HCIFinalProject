@@ -47,7 +47,20 @@ function mainExplanation() {
   return (
     <Box>
       <Container>
-        <Typography variant='h5'>Here is the explanation of this page</Typography>
+        <Typography variant='h4'>Welcome!</Typography>
+        <br />
+        <Typography variant='h5'>Common jobs can be done here are:</Typography>
+        <ul>
+          <li>
+            <Typography variant='body1'>course registration</Typography>
+          </li>
+          <li>
+            <Typography variant='body1'>transcript and diploma related</Typography>
+          </li>
+          <li>
+            <Typography variant='body1'>tuitions related</Typography>
+          </li>
+        </ul>
       </Container>
     </Box>
   );
